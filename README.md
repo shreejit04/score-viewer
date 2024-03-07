@@ -1,8 +1,8 @@
 # score-viewer
 
-// Classbuild.h
+**Classbuild.h**
 
-// Public:
+**Public:**
 - void regstatus();
 - std::string get_lname(); // declared in header file, returns last name of player
 - std::string get_fname(); // declared in header file, returns first name of player
@@ -15,7 +15,7 @@
 - void inputlname(); // declared in header file, takes a last name and sets it as the last name of a player
 - void inputYoB(); // declared in header file, takes a year of birth and sets it as the year of birth of a player
 
-// Private:
+**Private:**
 - int YoB;
 - std::string fname;
 - std::string lname;
@@ -23,13 +23,13 @@
 - std::string Ux;
 - std::string answer;
 
-// Classbuild.cpp
+**Classbuild.cpp**
 - void Player::regstatus(): asks the user if the player is registered, sets registration status based on user input
 - void Player::IsInUx(const int& season_yr): checks if the player is underaged using the season year and year of birth
 
-// Buffer.h
+**Buffer.h**
 
-// Public:
+**Public:**
 - void next();
 - void prev();
 - bool open();
@@ -44,14 +44,14 @@
 - void replace(const std::string& restring);
 - bool save();
 
-// Private:
+**Private:**
 - int top_line; // declared in header file, set to 0 for display and buffer purposes
 - int pointer_line; // declared in header file, set to 0 for display and buffer purposes
 - int height; // declared in header file, set to 5 for display purposes
 - std::vector<std::string> buff;
 - char fname[50];
 
-// Bufferlib.cpp
+**Bufferlib.cpp**
 - const std::string long_dash(50, '_'); // used for display purposes
 - void Buffer::next(): runs the next function, goes to the next player
 - void Buffer::prev(): runs the previous function, goes to the previous player
@@ -66,9 +66,9 @@
 - void Buffer::replace(): runs the replace function, able to replace a player in the spot as a different player previously
 - void Buffer::save(): runs the save function, saves the player from the insert and/or add functions into the "player.txt" file
 
-// Map.h
+**Map.h**
 
-// Public:
+**Public:**
 - void input_pair(std::istream& in); // allows the user to input data into the map to be saved
 - void output(); // outputs relevant data
 - std::map<std::string, Player> copymap();
